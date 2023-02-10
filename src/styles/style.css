@@ -1,0 +1,262 @@
+* {
+	margin: 0;
+	padding: 0;
+	cursor: default;
+}
+html,
+body {
+	height: 100%;
+}
+body {
+	display: -webkit-box;
+	display: flex;
+	-webkit-box-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	justify-content: center;
+	vertical-align: center;
+	flex-wrap: wrap;
+	align-content: center;
+
+	color: #2a2b2c;
+	background-color: #ebedee;
+	overflow: hidden;
+}
+.card {
+	/* background-color: transparent; */
+	width: 768px;
+	border-radius: 15px;
+}
+.card-text {
+	text-align: center;
+}
+.card-text > a {
+	text-decoration: none;
+	color: #fbfbfb;
+}
+.card-text > a {
+	cursor: pointer;
+}
+.card-text:hover {
+	cursor: pointer;
+}
+
+.form-control {
+	cursor: auto;
+}
+.card-header {
+	font-weight: bold;
+}
+@media (max-width: 769px) {
+	.card {
+		width: 80%;
+	}
+}
+@media (max-width: 420px) {
+	.card {
+		width: 95%;
+	}
+}
+@media (prefers-color-scheme: dark) {
+	body {
+		color: #134e6c;
+		font-weight: bold;
+		background: url('https://api.toshiki.dev');
+		background-size: cover;
+	}
+	.card {
+		background: hsla(0, 0%, 100%, 0.7);
+		-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+	.card:hover {
+		box-shadow: 0 0 11px rgba(33, 33, 33, 0.2);
+		-webkit-transform: scale(1.05, 1.05);
+	}
+	.card::after {
+		-webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+		transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+	}
+}
+::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+.popup {
+	background: hsla(0, 0%, 100%, 0.7);
+	filter: drop-shadow(0px 40px 10px rgba(0, 0, 0, 0.5));
+	color: #134e6c;
+}
+
+.wave {
+	animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+	animation-duration: 2.5s; /* Change to speed up or slow down */
+	animation-iteration-count: infinite; /* Never stop waving :) */
+	transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+	display: inline-block;
+}
+
+@keyframes wave-animation {
+	0% {
+		transform: rotate(0deg);
+	}
+	10% {
+		transform: rotate(14deg);
+	} /* The following five values can be played with to make the waving more or less extreme */
+	20% {
+		transform: rotate(-8deg);
+	}
+	30% {
+		transform: rotate(14deg);
+	}
+	40% {
+		transform: rotate(-4deg);
+	}
+	50% {
+		transform: rotate(10deg);
+	}
+	60% {
+		transform: rotate(0deg);
+	} /* Reset for the last half to pause */
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+.fa-beat {
+	animation: fa-beat 5s ease infinite;
+}
+@keyframes fa-beat {
+	0% {
+		transform: scale(1);
+	}
+	5% {
+		transform: scale(1.25);
+	}
+	20% {
+		transform: scale(1);
+	}
+	30% {
+		transform: scale(1);
+	}
+	35% {
+		transform: scale(1.25);
+	}
+	50% {
+		transform: scale(1);
+	}
+	55% {
+		transform: scale(1.25);
+	}
+	70% {
+		transform: scale(1);
+	}
+}
+
+.heart {
+	color: red;
+}
+
+@keyframes thrill {
+	from {
+		transform: rotate(2deg);
+	}
+
+	to {
+		transform: rotate(-2deg);
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		bottom: -20px;
+	}
+
+	to {
+		bottom: 30px;
+	}
+}
+
+#fadeIn {
+	width: 300px;
+	padding: 16px 0 16px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 40px;
+	margin: auto;
+	border-radius: 16px;
+	background: hsla(0, 0%, 100%, 0.7);
+	box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2);
+	animation: fadeIn 0.5s forwards;
+}
+
+#links {
+	width: 300px;
+	padding: 16px 0 16px 0;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0px;
+	margin: auto;
+	border-radius: 16px;
+	animation: thrill 2s infinite alternate ease-in-out;
+}
+@media all and (min-width: 1280px) {
+	#fadeIn,
+	#links {
+		width: 300px;
+	}
+}
+@media all and (max-width: 369px) {
+	#fadeIn,
+	#links {
+		transform: scale(0.8);
+		width: 300px;
+		padding: 16px 0 16px 0;
+		position: fixed;
+		left: 0;
+		right: 0;
+		bottom: 10px;
+		margin: auto;
+		border-radius: 30px;
+	}
+}
+
+.fa-question-circle {
+	cursor: pointer;
+}
+
+.btn-circle.btn-sm {
+	width: 38px;
+	height: 38px;
+	padding: 6px 0px;
+	border-radius: 20px;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+}
+.btn-circle.btn-md {
+	width: 50px;
+	height: 50px;
+	padding: 7px 10px;
+	border-radius: 25px;
+	font-size: 10px;
+	text-align: center;
+}
+.btn-circle.btn-xl {
+	width: 70px;
+	height: 70px;
+	padding: 10px 16px;
+	border-radius: 35px;
+	font-size: 12px;
+	text-align: center;
+}
+
+.modal {
+	color: #134e6c;
+}
+
+.light {
+	font-weight: lighter;
+}

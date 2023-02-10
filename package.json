@@ -1,0 +1,36 @@
+{
+  "name": "@toshikidev/fuki",
+  "description": "🐳 A lovely self-hosted yet serverless link shortener service via CloudFlare Workers!",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "node server.js",
+    "lint": "npx prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:toshikidev/fuki.git"
+  },
+  "keywords": [
+    "url-shortener",
+    "url",
+    "redirect",
+    "cloudflare",
+    "workers",
+    "cloudflare-workers",
+    "link-shortening",
+    "link-cutter",
+    "link",
+    "fuki",
+    "fuki.cc",
+    "PAAS"
+  ],
+  "author": "Toshiki Dev <hello@toshiki.dev>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/toshikidev/fuki/issues"
+  },
+  "homepage": "https://github.com/toshikidev/fuki",
+  "devDependencies": {
+    "prettier": "2.8.4"
+  }
+}

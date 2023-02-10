@@ -1,0 +1,21 @@
+name: ✅ Formatting and Linting
+
+on: push
+
+jobs:
+  format:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          ref: ${{ github.head_ref }}
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '16.x'
+      - run: yarn
+      - run: yarn lint
+      - name: Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'chore(lint): lint partial files for code fomatting'
+          branch: ${{ github.head_ref }}
