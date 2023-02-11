@@ -21,4 +21,4 @@ var server = http.createServer(function (req, resp) {
 
 server.listen(8081, 'localhost')
 
-console.log('❤️\xa0 Lovely server running at http://localhost:8081/')
+console.log('❤️' + ' ' + 'Lovely server running at http://localhost:8081/')
