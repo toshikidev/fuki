@@ -2,11 +2,12 @@
   "name": "@andatoshiki/fuki",
   "description": "🐳 A lovely self-hosted yet serverless link shortener service via CloudFlare Workers!",
   "version": "0.0.1",
+  "private": "false",
   "scripts": {
     "dev": "node server.js",
     "lint": "npx prettier --write .",
     "postpublish": "yarn publish-npm",
-    "publish-npm": "yarn publish --access public --ignore-scripts --@OWNER:registry='https://registry.npmjs.org'"
+    "publish-npm": "yarn publish --access public --ignore-scripts --@andatoshiiki:registry='https://registry.npmjs.org'"
   },
   "repository": {
     "type": "git",
