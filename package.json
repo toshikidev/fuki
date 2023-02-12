@@ -2,7 +2,6 @@
   "name": "@andatoshiki/fuki",
   "description": "🐳 A lovely self-hosted yet serverless link shortener service via CloudFlare Workers!",
   "version": "0.0.1",
-  "private": "false",
   "scripts": {
     "dev": "node server.js",
     "lint": "npx prettier --write .",
