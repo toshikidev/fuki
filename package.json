@@ -8,7 +8,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:toshikidev/fuki.git"
+    "url": "git@github.com:toshikidev/fuki.git",
+    "postpublish": "npm run publish-npm",
+    "publish-npm": "npm publish --access public --ignore-scripts --@OWNER:registry='https://registry.npmjs.org'"
   },
   "keywords": [
     "url-shortener",
