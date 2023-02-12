@@ -40,4 +40,4 @@ jobs:
       - name: Npm registry authentication
         run: yarn config set //registry.npmjs.org/:_authToken ${{ secrets.NPM_TOKEN }}
       - name: Publish package to Github and Npm package registries
-        run: yarn publish
+        run: npm publish
