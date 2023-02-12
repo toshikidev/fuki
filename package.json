@@ -4,13 +4,13 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "node server.js",
-    "lint": "npx prettier --write ."
+    "lint": "npx prettier --write .",
+    "postpublish": "yarn publish-npm",
+    "publish-npm": "yarn publish --access public --ignore-scripts --@OWNER:registry='https://registry.npmjs.org'"
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:toshikidev/fuki.git",
-    "postpublish": "npm run publish-npm",
-    "publish-npm": "npm publish --access public --ignore-scripts --@OWNER:registry='https://registry.npmjs.org'"
+    "url": "git@github.com:toshikidev/fuki.git"
   },
   "keywords": [
     "url-shortener",
