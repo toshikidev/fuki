@@ -80,7 +80,7 @@ async function is_url_exist(url_sha512) {
 }
 async function is_url_safe(url) {
 	let raw = JSON.stringify({
-		client: { clientId: 'Url-Shorten-Worker', clientVersion: '1.0.7' },
+		client: { clientId: '@andatoshiki/fuki', clientVersion: '0.0.13' },
 		threatInfo: {
 			threatTypes: ['MALWARE', 'SOCIAL_ENGINEERING', 'POTENTIALLY_HARMFUL_APPLICATION', 'UNWANTED_SOFTWARE'],
 			platformTypes: ['ANY_PLATFORM'],
