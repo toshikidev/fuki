@@ -154,7 +154,7 @@ async function handleRequest(request) {
 
 	console.log(path)
 	if (!path) {
-		const html = await fetch('https://static.fuki.cc/' + config.themes + '/index.html')
+		const html = await fetch('https://cdn.jsdelivr.net/gh/toshikidev/fuki@gh-pages/' + config.themes + '/index.html')
 
 		return new Response(await html.text(), {
 			headers: {
@@ -176,7 +176,7 @@ async function handleRequest(request) {
 	if (location) {
 		if (config.safe_browsing_api_key) {
 			if (!(await is_url_safe(location))) {
-				let warning_page = await fetch('https://static.fuki.cc/safe-browsing.html')
+				let warning_page = await fetch('https://cdn.jsdelivr.net/gh/toshikidev/fuki@gh-pages/safe-browsing.html')
 				warning_page = await warning_page.text()
 				warning_page = warning_page.replace(/{Replace}/gm, location)
 				return new Response(warning_page, {
@@ -187,7 +187,7 @@ async function handleRequest(request) {
 			}
 		}
 		if (config.no_ref == 'on') {
-			let no_ref = await fetch('https://static.fuki.cc/no-ref.html')
+			let no_ref = await fetch('https://cdn.jsdelivr.net/gh/toshikidev/fuki@gh-pages/no-ref.html')
 			no_ref = await no_ref.text()
 			no_ref = no_ref.replace(/{Replace}/gm, location)
 			return new Response(no_ref, {
