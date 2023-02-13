@@ -1,5 +1,5 @@
 {
-    "env": {
-        "BRANCH": "gh-pages"
-    }
+  "env": {
+    "BRANCH": "gh-pages"
+  }
 }
