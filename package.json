@@ -11,7 +11,7 @@
   "scripts": {
     "dev": "node server.js",
     "lint": "npx prettier --write .",
-    "changelog": "rm -f CHANGELOG.md && sh ./tools/changelog.sh",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
     "postpublish": "yarn publish-npm",
     "publish-npm": "yarn publish --access public --ignore-scripts --@andatoshiiki:registry='https://registry.npmjs.org'"
   },
