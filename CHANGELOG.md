@@ -1,3 +1,12 @@
+## [0.0.14](https://github.com/toshikidev/fuki/compare/v0.0.13...v0.0.14) (2023-02-13)
+
+
+### Bug Fixes
+
+* **workers:** fix client information in worker runtime ([0cc0a99](https://github.com/toshikidev/fuki/commit/0cc0a994181820730af3e912c7ec76a31bd9d782))
+
+
+
 ## [0.0.13](https://github.com/toshikidev/fuki/compare/v0.0.12...v0.0.13) (2023-02-13)
 
 
