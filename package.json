@@ -12,8 +12,8 @@
     "dev": "node server.js",
     "lint": "npx prettier --write .",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
-    "postpublish": "npm publish-npm",
-    "publish-npm": "npm publish --access public --ignore-scripts --@andatoshiiki:registry='https://registry.npmjs.org'",
+    "postpublish": "yarn publish-npm",
+    "publish-npm": "yarn publish --access public --ignore-scripts --@andatoshiiki:registry='https://registry.npmjs.org'",
     "lint-commit": "git commit -m 'chore(lint): lint all files in project via prettier'"
   },
   "repository": {
