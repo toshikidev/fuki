@@ -1,7 +1,7 @@
 {
   "name": "@andatoshiki/fuki",
   "description": "🐳 A lovely self-hosted yet serverless link shortener service via CloudFlare Workers!",
-  "version": "0.0.14",
+  "version": "0.0.2",
   "author": "Toshiki Dev <hello@toshiki.dev>",
   "license": "MIT",
   "bugs": {
